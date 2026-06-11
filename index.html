@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeFlow | Visual Development Platform</title>
+    <title>PeaceFlow | 핵무기 없는 평화로운 세상을 향한 발걸음</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- 한국어 가독성을 위해 Noto Sans KR 폰트 추가 및 Poppins 유지 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,14 +15,14 @@
         }
         
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Noto Sans KR', 'Poppins', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9fbfd;
+            background-color: #f8fafc;
         }
         
         h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif;
             font-weight: 600;
             line-height: 1.3;
         }
@@ -118,8 +119,8 @@
         
         /* Hero Section */
         .hero {
-            padding: 150px 0 100px;
-            background: linear-gradient(135deg, #f0f4ff 0%, #f9fbfd 100%);
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
         }
         
         .hero-content {
@@ -134,9 +135,10 @@
         }
         
         .hero-text h1 {
-            font-size: 48px;
+            font-size: 44px;
             margin-bottom: 20px;
             color: #222;
+            word-break: keep-all;
         }
         
         .hero-text h1 span {
@@ -148,6 +150,7 @@
             color: #666;
             margin-bottom: 30px;
             max-width: 600px;
+            word-break: keep-all;
         }
         
         .hero-buttons {
@@ -191,12 +194,14 @@
             font-size: 36px;
             color: #222;
             margin-bottom: 15px;
+            word-break: keep-all;
         }
         
         .section-title p {
             color: #666;
             max-width: 700px;
             margin: 0 auto;
+            word-break: keep-all;
         }
         
         .features {
@@ -239,10 +244,13 @@
         .feature-card h3 {
             font-size: 22px;
             margin-bottom: 15px;
+            color: #222;
         }
         
         .feature-card p {
             color: #666;
+            font-size: 15px;
+            word-break: keep-all;
         }
         
         /* Benefits Section */
@@ -271,10 +279,13 @@
         .benefit-item h3 {
             font-size: 22px;
             margin-bottom: 15px;
+            color: #222;
         }
         
         .benefit-item p {
             color: #666;
+            font-size: 15px;
+            word-break: keep-all;
         }
         
         /* Testimonials */
@@ -301,7 +312,8 @@
             font-size: 18px;
             font-style: italic;
             margin-bottom: 30px;
-            color: #555;
+            color: #444;
+            word-break: keep-all;
         }
         
         .testimonial-author {
@@ -321,12 +333,13 @@
             justify-content: center;
             font-weight: bold;
             color: #4361ee;
-            font-size: 24px;
+            font-size: 20px;
         }
         
         .author-info h4 {
             font-size: 18px;
             margin-bottom: 5px;
+            color: #222;
         }
         
         .author-info p {
@@ -334,7 +347,7 @@
             font-size: 14px;
         }
         
-        /* Pricing Section */
+        /* Pricing Section (Campaign / Support Plans) */
         .pricing {
             padding: 100px 0;
             background-color: #f9fbfd;
@@ -389,7 +402,7 @@
         }
         
         .plan-price {
-            font-size: 48px;
+            font-size: 32px;
             font-weight: 700;
             color: #4361ee;
             margin-bottom: 20px;
@@ -398,6 +411,7 @@
         .plan-price span {
             font-size: 16px;
             color: #777;
+            font-weight: normal;
         }
         
         .plan-features {
@@ -406,9 +420,10 @@
         }
         
         .plan-features li {
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #eee;
             color: #555;
+            font-size: 15px;
         }
         
         .plan-features li:last-child {
@@ -426,6 +441,7 @@
         .cta-section h2 {
             font-size: 36px;
             margin-bottom: 20px;
+            word-break: keep-all;
         }
         
         .cta-section p {
@@ -433,6 +449,7 @@
             max-width: 700px;
             margin: 0 auto 30px;
             opacity: 0.9;
+            word-break: keep-all;
         }
         
         .cta-section .cta-button {
@@ -448,8 +465,8 @@
         
         /* Footer */
         footer {
-            background-color: #222;
-            color: #ccc;
+            background-color: #1e293b;
+            color: #cbd5e1;
             padding: 70px 0 20px;
         }
         
@@ -475,7 +492,7 @@
         }
         
         .footer-links a {
-            color: #aaa;
+            color: #94a3b8;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -487,9 +504,9 @@
         .copyright {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid #444;
+            border-top: 1px solid #334155;
             font-size: 14px;
-            color: #888;
+            color: #64748b;
         }
         
         /* Responsive Design */
@@ -527,11 +544,11 @@
             }
             
             .hero-text h1 {
-                font-size: 36px;
+                font-size: 34px;
             }
             
             .section-title h2 {
-                font-size: 30px;
+                font-size: 28px;
             }
             
             .hero-buttons {
@@ -547,7 +564,7 @@
         
         @media (max-width: 576px) {
             .hero {
-                padding: 130px 0 80px;
+                padding: 140px 0 80px;
             }
             
             .features, .benefits, .testimonials, .pricing, .cta-section {
@@ -559,7 +576,7 @@
             }
             
             .plan-price {
-                font-size: 36px;
+                font-size: 28px;
             }
         }
     </style>
@@ -570,19 +587,19 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <div class="logo-icon"><i class="fas fa-bezier-curve"></i></div>
-                    <div class="logo-text">Code<span>Flow</span></div>
+                    <div class="logo-icon"><i class="fas fa-peace"></i></div>
+                    <div class="logo-text">Peace<span>Flow</span></div>
                 </div>
                 
                 <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="#features">핵심 비전</a></li>
+                    <li><a href="#benefits">변화와 가치</a></li>
+                    <li><a href="#testimonials">활동가 메시지</a></li>
+                    <li><a href="#pricing">참여 방법</a></li>
+                    <li><a href="#">캠페인 자료실</a></li>
                 </ul>
                 
-                <button class="cta-button">Start Free Trial</button>
+                <button class="cta-button">서명 동참하기</button>
                 <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
@@ -593,119 +610,120 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Build Apps Faster With <span>Visual Development</span></h1>
-                    <p>CodeFlow empowers teams to create enterprise-grade applications with minimal coding. Drag, drop, and connect components to build powerful web and mobile apps in record time.</p>
+                    <h1>핵무기 없는 평화로운 <span>내일을 향해</span></h1>
+                    <p>PeaceFlow는 인류의 생존과 안전을 위협하는 핵무기 퇴출을 목적으로 하는 글로벌 평화 연대 네트워크입니다. 더 안전하고 건강한 지구를 지키기 위해 전 세계 시민들과 손을 맞잡고 평화의 목소리를 전달합니다.</p>
                     <div class="hero-buttons">
-                        <button class="cta-button">Start Building Free</button>
-                        <button class="secondary-button">Watch Demo</button>
+                        <button class="cta-button">캠페인 서명하기</button>
+                        <button class="secondary-button">홍보 영상 시청</button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CodeFlow Platform Interface">
+                    <!-- 평화로운 하늘과 청정한 지구를 연상시키는 고화질 이미지 적용 -->
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="평화로운 자연 풍경">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Section (핵심 비전 및 활동) -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
-                <h2>Powerful Features for Rapid Development</h2>
-                <p>CodeFlow provides all the tools you need to build, deploy, and scale applications without writing extensive code.</p>
+                <h2>더 안전한 세상을 만드는 핵심 활동</h2>
+                <p>우리는 단순히 핵무기의 폐기를 말하는 것에 그치지 않고, 국제사회 전체의 인식 전환과 법적 구속력을 강화하기 위한 실질적인 행동을 실천합니다.</p>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-th-large"></i>
+                        <i class="fas fa-ban"></i>
                     </div>
-                    <h3>Visual Builder</h3>
-                    <p>Drag and drop UI components to design responsive interfaces. Connect data sources with simple point-and-click actions.</p>
+                    <h3>비확산 및 단계적 폐기</h3>
+                    <p>기존 핵보유국들의 군비 감축을 유도하고, 비핵보유국의 신규 핵개발 조짐을 감시하며 실질적인 단계적 감축 로드맵을 제안합니다.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-database"></i>
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                    <h3>Database Integration</h3>
-                    <p>Connect to any data source with built-in connectors. Automatically generate CRUD operations without writing SQL.</p>
+                    <h3>피해자 지원과 상처 치유</h3>
+                    <p>과거 원폭 피해자 및 방사능 오염 지역 주민들의 건강을 살피고 인권을 옹호하며, 이들의 아픔을 역사의 기억으로 보존합니다.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>Cross-Platform</h3>
-                    <p>Build once, deploy everywhere. Generate applications for web, iOS, and Android from a single visual design.</p>
+                    <h3>글로벌 조약 지지 서명</h3>
+                    <p>유엔 핵무기금지조약(TPNW)의 가치를 널리 알리고, 각 국가 정부가 이 조약에 서명하고 이행하도록 시민 사회와 함께 압박합니다.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-book-open"></i>
                     </div>
-                    <h3>Extensible with Code</h3>
-                    <p>Add custom functionality with JavaScript when needed. Our platform doesn't limit your creativity or complexity.</p>
+                    <h3>평화 및 역사 교육</h3>
+                    <p>핵무기가 사회와 자연 생태계에 미치는 파괴적인 영향을 체계적으로 정리하여 미래 세대에게 평화 교육 콘텐츠로 배포합니다.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-globe-americas"></i>
                     </div>
-                    <h3>Enterprise Security</h3>
-                    <p>Built-in authentication, authorization, and data encryption. SOC2 compliant with enterprise-grade security features.</p>
+                    <h3>글로벌 평화 연대</h3>
+                    <p>정치와 국경, 문화적 장벽을 넘어 전 세계 NGO, 싱크탱크, 평화 활동단체와 공동 학술 포럼과 캠페인을 개최합니다.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>One-Click Deployment</h3>
-                    <p>Deploy to cloud or on-premises with a single click. Automatic scaling and monitoring included.</p>
+                    <h3>군비 투명성 모니터링</h3>
+                    <p>핵보유국들의 무기 고도화 계획과 전술핵 재배치 등을 면밀히 파악하고, 과학적 데이터에 기반한 감시 보고서를 정기 발행합니다.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
+    <!-- Benefits Section (핵무기 없는 세상이 가져올 가치) -->
     <section class="benefits" id="benefits">
         <div class="container">
             <div class="section-title">
-                <h2>Why Choose CodeFlow?</h2>
-                <p>Join thousands of companies accelerating their digital transformation with low-code development.</p>
+                <h2>핵무기 없는 세상이 우리에게 주는 가치</h2>
+                <p>군비 경쟁을 멈추고 축적된 인류의 에너지를 도약의 기회로 전환해야 할 때입니다.</p>
             </div>
             
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-shield-halved"></i>
                     </div>
-                    <h3>10x Faster Development</h3>
-                    <p>Build applications in days instead of months with visual development tools.</p>
+                    <h3>인류 생존 위협의 극복</h3>
+                    <p>단 한 번의 불시 오작동이나 갈등 증폭으로 전 인류가 공멸할 수 있는 우발적 핵전쟁의 리스크를 영구 제거합니다.</p>
                 </div>
                 
                 <div class="benefit-item">
                     <div class="benefit-icon">
-                        <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-seedling"></i>
                     </div>
-                    <h3>Reduce Costs by 70%</h3>
-                    <p>Lower development and maintenance costs with fewer resources required.</p>
+                    <h3>평화 예산의 사회적 복귀</h3>
+                    <p>해마다 유지 및 고도화에 소모되는 천문학적인 군사적 예산을 빈곤 해결, 교육 지원 및 보건 복지 서비스 증진에 투자합니다.</p>
                 </div>
                 
                 <div class="benefit-item">
                     <div class="benefit-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Citizen Developers</h3>
-                    <p>Enable business users to build solutions with minimal IT assistance.</p>
+                    <h3>기후 위기 및 생태 보호</h3>
+                    <p>핵전쟁이 가져올 방사능 낙진과 지구 한랭화(핵겨울) 현상을 차단하고, 미래 세대에게 훼손되지 않은 온전한 지구를 물려줍니다.</p>
                 </div>
                 
                 <div class="benefit-item">
                     <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-users-viewfinder"></i>
                     </div>
-                    <h3>Scale Effortlessly</h3>
-                    <p>From prototype to enterprise-scale applications with the same platform.</p>
+                    <h3>상호 협력과 신뢰 회복</h3>
+                    <p>공포가 지배하는 일시적 균형 대신, 무기 감소에 따른 군사적 긴장 완화와 이를 통한 실질적 신뢰 체계를 수립합니다.</p>
                 </div>
             </div>
         </div>
@@ -715,20 +733,20 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Trusted by Industry Leaders</h2>
-                <p>See what our customers have to say about their experience with CodeFlow.</p>
+                <h2>평화를 위해 행동하는 이들의 메시지</h2>
+                <p>우리가 걷는 무핵화의 길을 함께 지지하고 있는 주요 활동가들과 목격자들의 진솔한 이야기를 전합니다.</p>
             </div>
             
             <div class="testimonial-slider">
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        "CodeFlow transformed how we deliver solutions to our business units. What used to take 6 months now takes 3 weeks. Our development team can focus on complex problems while business teams build their own solutions."
+                        "핵무기는 결코 우리를 완전하게 보호하지 못합니다. 오히려 전 지구인을 파괴의 인질로 삼고 있을 뿐입니다. 상호 신뢰와 비무장화만이 우리가 공존할 수 있는 유일한 대안입니다."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SC</div>
+                        <div class="author-avatar">MS</div>
                         <div class="author-info">
-                            <h4>Sarah Chen</h4>
-                            <p>CTO, TechGrowth Inc.</p>
+                            <h4>마이클 스티븐스</h4>
+                            <p>국제평화기구 수석 연구원</p>
                         </div>
                     </div>
                 </div>
@@ -736,55 +754,52 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section (참여 형태 안내) -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-title">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Choose the plan that fits your needs. All plans include core features with no hidden fees.</p>
+                <h2>연대의 첫걸음, 당신이 행동하는 방법</h2>
+                <p>당신의 관심과 지지가 모일 때, 각국의 정치 지도자들과 국제기구를 실질적으로 변화시키는 거대한 흐름이 완성됩니다.</p>
             </div>
             
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3 class="plan-name">Starter</h3>
-                    <div class="plan-price">$29<span>/month</span></div>
+                    <h3 class="plan-name">서명 지지자</h3>
+                    <div class="plan-price">무료 <span>/ 서명 참여</span></div>
                     <ul class="plan-features">
-                        <li>Up to 5 users</li>
-                        <li>10 GB storage</li>
-                        <li>Basic components</li>
-                        <li>Community support</li>
-                        <li>1 production app</li>
+                        <li>국제 평화 서명부 등록</li>
+                        <li>월간 글로벌 평화 동향 리포트 발송</li>
+                        <li>평화 세미나 참여 권한 부여</li>
+                        <li>캠페인 포스터 디지털 킷 제공</li>
                     </ul>
-                    <button class="secondary-button">Get Started</button>
+                    <button class="secondary-button">지지의사 등록</button>
                 </div>
                 
                 <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <h3 class="plan-name">Professional</h3>
-                    <div class="plan-price">$89<span>/month</span></div>
+                    <div class="featured-badge">가장 권장하는 연대</div>
+                    <h3 class="plan-name">평화 메신저</h3>
+                    <div class="plan-price">월 1만원 <span>/ 정기 후원</span></div>
                     <ul class="plan-features">
-                        <li>Up to 25 users</li>
-                        <li>100 GB storage</li>
-                        <li>All components</li>
-                        <li>Priority support</li>
-                        <li>10 production apps</li>
-                        <li>Custom branding</li>
+                        <li>국제 평화 서명부 등록</li>
+                        <li>시민 평화 학교 및 세미나 무료 초대</li>
+                        <li>평화 심볼 배지 & 가방 웰컴 키트 제공</li>
+                        <li>국내외 지부 연대 회합 참가 자격</li>
+                        <li>연간 기부 보고서 및 투명성 보증</li>
                     </ul>
-                    <button class="cta-button">Try Free for 14 Days</button>
+                    <button class="cta-button">정기후원 동참</button>
                 </div>
                 
                 <div class="pricing-card">
-                    <h3 class="plan-name">Enterprise</h3>
-                    <div class="plan-price">Custom</div>
+                    <h3 class="plan-name">글로벌 파트너</h3>
+                    <div class="plan-price">기업 / 단체 <span>/ 제휴</span></div>
                     <ul class="plan-features">
-                        <li>Unlimited users</li>
-                        <li>Unlimited storage</li>
-                        <li>All features included</li>
-                        <li>24/7 dedicated support</li>
-                        <li>Unlimited apps</li>
-                        <li>On-premises option</li>
+                        <li>임직원 참여 사회공헌(CSR) 프로그램 제휴</li>
+                        <li>평화 교육 강사진 기업 출강 무료 지원</li>
+                        <li>평화 공동 캠페인 공동 마케팅 지원</li>
+                        <li>국제 연대 포럼 내 로고 표기 및 연설</li>
+                        <li>전담 코디네이터 배치 지원</li>
                     </ul>
-                    <button class="secondary-button">Contact Sales</button>
+                    <button class="secondary-button">제휴 및 파트너 문의</button>
                 </div>
             </div>
         </div>
@@ -793,9 +808,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Start Building Today</h2>
-            <p>Join over 10,000 companies that use CodeFlow to accelerate their application development. No credit card required for the free trial.</p>
-            <button class="cta-button">Get Started for Free</button>
+            <h2>오늘, 평화를 선언해 주세요</h2>
+            <p>우리 아이들의 내일에서 방사능 오염과 전쟁의 위협을 걷어내는 힘은 한 시민의 용기 있는 서명 한 줄에서 시작됩니다. 지금 평화의 대열에 합류하세요.</p>
+            <button class="cta-button">지금 서명 동참하기</button>
         </div>
     </section>
 
@@ -805,48 +820,48 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="logo">
-                        <div class="logo-icon"><i class="fas fa-bezier-curve"></i></div>
-                        <div class="logo-text">Code<span>Flow</span></div>
+                        <div class="logo-icon"><i class="fas fa-peace"></i></div>
+                        <div class="logo-text">Peace<span>Flow</span></div>
                     </div>
-                    <p style="margin-top: 20px; color: #aaa;">The leading visual development platform for building enterprise applications with minimal coding.</p>
+                    <p style="margin-top: 20px; color: #94a3b8; font-size: 15px; word-break: keep-all;">피스플로우는 인류의 영구적인 평화와 지구상 모든 핵무기의 종식을 위해 국경을 초월해 활동하는 글로벌 비영리 시민 단체입니다.</p>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Product</h3>
+                    <h3>활동 및 비전</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Use Cases</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">캠페인 소개</a></li>
+                        <li><a href="#">연구 보고서</a></li>
+                        <li><a href="#">주요 협력 기관</a></li>
+                        <li><a href="#">성명서 전문</a></li>
+                        <li><a href="#">연대 갤러리</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Resources</h3>
+                    <h3>평화 자료실</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#">핵무기 Q&A</a></li>
+                        <li><a href="#">원폭 역사의 진실</a></li>
+                        <li><a href="#">청소년 평화 교육용 교안</a></li>
+                        <li><a href="#">글로벌 조약 정보</a></li>
+                        <li><a href="#">뉴스레터 구독 신청</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Company</h3>
+                    <h3>단체 정보</h3>
                     <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">소개 및 연혁</a></li>
+                        <li><a href="#">인재 채용</a></li>
+                        <li><a href="#">기부금 투명 관리 정책</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">연락처 및 오시는 길</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 CodeFlow. All rights reserved.</p>
+                <p>&copy; 2026 PeaceFlow. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -903,22 +918,22 @@
         // Simple testimonial slider
         const testimonials = [
             {
-                text: "CodeFlow transformed how we deliver solutions to our business units. What used to take 6 months now takes 3 weeks. Our development team can focus on complex problems while business teams build their own solutions.",
-                name: "Sarah Chen",
-                position: "CTO, TechGrowth Inc.",
-                initials: "SC"
+                text: "핵무기는 결코 우리를 완전하게 보호하지 못합니다. 오히려 전 지구인을 파괴의 인질로 삼고 있을 뿐입니다. 상호 신뢰와 비무장화만이 우리가 공존할 수 있는 유일한 대안입니다.",
+                name: "마이클 스티븐스",
+                position: "국제평화기구 수석 연구원",
+                initials: "MS"
             },
             {
-                text: "We reduced our app development time by 80% using CodeFlow. The visual interface made it easy for our analysts to build data dashboards without waiting for IT resources.",
-                name: "Marcus Johnson",
-                position: "Director of Operations, DataCorp",
-                initials: "MJ"
+                text: "저희 원폭 생존자들의 마지막 간절한 소망은 단 하나, 우리가 눈감기 전에 단 한 대의 핵무기도 지구상에 존재하지 않는 세상을 마주하는 것입니다. 인류가 저지른 비극은 한 번으로 충분해야 합니다.",
+                name: "세츠코 설로",
+                position: "원폭 피해 생존자 및 평화 운동가",
+                initials: "SS"
             },
             {
-                text: "As a non-technical founder, CodeFlow allowed me to build our MVP in just 2 months. I could test ideas quickly and iterate based on user feedback without deep coding knowledge.",
-                name: "Lisa Wang",
-                position: "Founder, StartupLabs",
-                initials: "LW"
+                text: "평화는 거창한 담론이 아닙니다. 이웃 국가와 무기로 다투지 않을 것이라는 일상적인 믿음입니다. 무핵화를 위해 노력하는 한 걸음마다 지지와 존경을 보냅니다.",
+                name: "강진희",
+                position: "국경없는 평화 교사 모임 대표",
+                initials: "JH"
             }
         ];
         
@@ -948,19 +963,20 @@
         setInterval(rotateTestimonial, 5000);
         
         // CTA button interactions
-        document.querySelectorAll('.cta-button').forEach(button => {
+        document.querySelectorAll('.cta-button, .hero-buttons .cta-button').forEach(button => {
             button.addEventListener('click', function() {
-                alert('Thank you for your interest in CodeFlow! You would be redirected to the signup page in a real implementation.');
+                alert('PeaceFlow 무핵화 서명 운동에 관심을 가져주셔서 진심으로 감사드립니다! 실제 구현 시 서명 입력 팝업 또는 상세 페이지로 연결됩니다.');
             });
         });
         
-        // Pricing card interactions
+        // Support card interactions
         document.querySelectorAll('.pricing-card button').forEach(button => {
             button.addEventListener('click', function() {
                 const planName = this.closest('.pricing-card').querySelector('.plan-name').textContent;
-                alert(`You selected the ${planName} plan. In a real implementation, you would be redirected to the checkout process.`);
+                alert(`선택하신 참여 단계는 [${planName}] 입니다. 실제 서비스 구현 시 해당 참여 양식 및 후원 시스템 결제 창으로 안전하게 안내됩니다.`);
             });
         });
     </script>
 </body>
 </html>
+--- END OF FILE index.html ---
